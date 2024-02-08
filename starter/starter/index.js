@@ -120,4 +120,3 @@ var maxDecrease = Math.min(...changes);
 var maxDecreaseIndex = changes.indexOf(maxDecrease);
 var maxDecreaseDate = finances[maxDecreaseIndex + 1][0];
 console.log("Greatest Decrease in Profits/Losses: " + maxDecreaseDate + " ($" + maxDecrease + ")");
-
