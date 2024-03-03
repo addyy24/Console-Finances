@@ -1,0 +1,75 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+}
+
+input[type=search] {
+    width: 80%;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+.category-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background-color: #f0f0f0;
+}
+
+.category-nav button {
+    background: none;
+    border: none;
+    padding: 0.5em;
+    text-align: center;
+    display: block; /* This ensures that the button content is block-level, which allows the image and text to stack */
+}
+
+.category-nav img {
+    width: 100px; /* or any other size */
+    height: 100px; /* or any other size */
+    border-radius: 50%; /* if you want rounded images */
+    display: block; /* This makes the image a block-level element, which allows the text to appear underneath */
+    margin: 0 auto; /* This centers the image within the button */
+}
+
+.category-nav span {
+    display: block; /* This makes the text a block-level element, ensuring it appears on a new line under the image */
+    margin-top: 0.5em; /* This adds some space between the image and the text */
+}
+
+.diet-suggestions h2, .most-popular h2 {
+    padding: 1em;
+}
+
+.recipe-cards {
+    display: flex;
+    overflow-x: auto;
+    padding: 1em;
+}
+
+.recipe-card {
+    margin-right: 1em;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+@media (min-width: 600px) {
+    .recipe-cards {
+        justify-content: space-between;
+    }
+}
